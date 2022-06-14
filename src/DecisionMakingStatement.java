@@ -34,5 +34,28 @@ public class DecisionMakingStatement {
         else{
             System.out.println("You are from other country");
         }
+
+
+
+        //for loop
+        //1. simple for loop
+        for (int i = 0;i<3; i++){
+            System.out.println(i);
+        }
+
+
+        //2.Nested for loop
+        for (int i = 0; i<5;i++){
+            for(int j = 0;j<5;j++){
+                System.out.println(i+""+j);
+            }
+        }
+
+        //nested example
+        for(int i = 3; i>0; i--){
+            for(int j = 3; j>0; j--){
+                System.out.println(i+""+j);
+            }
+        }
     }
 }
