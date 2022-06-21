@@ -1,5 +1,8 @@
 public class DecisionMakingStatement {
     public static void main(String[] args) {
+
+        //Desicion making
+        //if/else
         String city = "Pune";
         if(city == "Pune") {
             System.out.println("You are from Pune");
@@ -35,27 +38,35 @@ public class DecisionMakingStatement {
             System.out.println("You are from other country");
         }
 
-
-
-        //for loop
-        //1. simple for loop
-        for (int i = 0;i<3; i++){
-            System.out.println(i);
+        //switch
+        int ch = 0;
+        switch (ch){
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            case 3:
+                System.out.println("Three");
+                break;
+            default:
+                System.out.println("No Matching Found");
         }
 
-
-        //2.Nested for loop
-        for (int i = 0; i<5;i++){
-            for(int j = 0;j<5;j++){
-                System.out.println(i+""+j);
-            }
-        }
-
-        //nested example
-        for(int i = 3; i>0; i--){
-            for(int j = 3; j>0; j--){
-                System.out.println(i+""+j);
-            }
+        int cab = 2;
+        switch (cab){
+            case 1:
+                System.out.println("one");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            case 3:
+                System.out.println("Three");
+                break;
+            default:
+                System.out.println("No Matching Found");
         }
     }
 }
