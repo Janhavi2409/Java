@@ -1,4 +1,4 @@
-package ReverseNos;
+package Assignment;
 
 public class ReverseNos {
 }
