@@ -5,7 +5,7 @@ public class Bike {
     String bikeName;
 
     public Bike() {
-        this(4678,"Jupiter");
+        this(4678, "Jupiter");
         System.out.println("In Default Constructor");
     }
 
@@ -15,13 +15,14 @@ public class Bike {
         this.bikeName = bikeName;
     }
 
-    void display(){
+    void display() {
         System.out.println("*****************Bike Details*****************");
-        System.out.println("Bike No: "+bikeNo);
-        System.out.println("Bike Name: "+bikeName);
+        System.out.println("Bike No: " + bikeNo);
+        System.out.println("Bike Name: " + bikeName);
     }
 }
-class BikeImpl{
+
+class BikeImpl {
     public static void main(String[] args) {
         Bike b1 = new Bike();
         b1.display();

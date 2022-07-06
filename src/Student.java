@@ -1,25 +1,28 @@
 import java.util.Scanner;
 
-public class Student{
+public class Student {
     String name;
     int rno;
     String address;
     Float age;
-    void insertData(int r,String nm, String addr, Float a){
+
+    void insertData(int r, String nm, String addr, Float a) {
         rno = r;
-    name = nm;
-    address = addr;
-    age = a;
+        name = nm;
+        address = addr;
+        age = a;
+    }
+
+    void display() {
+        System.out.println("********************student information********************");
+        System.out.println("Roll no. " + rno);
+        System.out.println("Name " + name);
+        System.out.println("Address " + address);
+        System.out.println("Age " + age);
+    }
 }
-void display(){
-    System.out.println("********************student information********************");
-    System.out.println("Roll no. "+rno);
-    System.out.println("Name "+name);
-    System.out.println("Address "+address);
-    System.out.println("Age "+ age);
-}
-}
- class StudentImp {
+
+class StudentImp {
     public static void main(String[] args) {
         Student s1 = new Student();
         s1.rno = 12;
@@ -40,7 +43,7 @@ void display(){
 
 
         Student s2 = new Student();
-        s2.insertData (rno, nm, addr, a);
+        s2.insertData(rno, nm, addr, a);
         s2.display();
 
 

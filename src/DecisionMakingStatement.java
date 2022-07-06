@@ -4,43 +4,38 @@ public class DecisionMakingStatement {
         //Desicion making
         //if/else
         String city = "Pune";
-        if(city == "Pune") {
+        if (city == "Pune") {
             System.out.println("You are from Pune");
-        }
-        else{
+        } else {
             System.out.println("You are from Mumbai");
         }
 
 
-        if(city == "Mumbai"){
+        if (city == "Mumbai") {
             System.out.println("You are from Mumbai");
-        }
-        else if(city == "Goa"){
+        } else if (city == "Goa") {
             System.out.println("You are fromGoa");
-        }
-        else{
+        } else {
             System.out.println("You are from Pune");
         }
 
 
         String Country = "India";
-        if(Country == "India"){
-            if(city == "Goa"){
+        if (Country == "India") {
+            if (city == "Goa") {
                 System.out.println("Goa is in India");
-            }
-            else{
-                if (city == "Pune"){
+            } else {
+                if (city == "Pune") {
                     System.out.println("Pune is in India");
                 }
             }
-        }
-        else{
+        } else {
             System.out.println("You are from other country");
         }
 
         //switch
         int ch = 0;
-        switch (ch){
+        switch (ch) {
             case 1:
                 System.out.println("one");
                 break;
@@ -55,7 +50,7 @@ public class DecisionMakingStatement {
         }
 
         int cab = 2;
-        switch (cab){
+        switch (cab) {
             case 1:
                 System.out.println("one");
                 break;

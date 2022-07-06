@@ -6,16 +6,18 @@
  */
 
 public class Variables {
-    int c = 9;//instance variable
     static int b = 10;//static variable
+    int c = 9;//instance variable
+
     public static void main(String[] args) {
         int a = 20;//local variables
         System.out.println(b);
         System.out.println(a);
     }
-    void display(){
+
+    void display() {
         int a = 10;//local variables
-        System.out.println(a+b+c);
+        System.out.println(a + b + c);
 
     }
 

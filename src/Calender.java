@@ -5,9 +5,9 @@ public class Calender {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first three letters of any Month");
         String cal = sc.next();
-        switch(cal){
+        switch (cal) {
             case "Jan":
-              System.out.println("January");
+                System.out.println("January");
                 break;
             case "Feb":
                 System.out.println("February");
@@ -43,7 +43,7 @@ public class Calender {
                 System.out.println("December");
                 break;
             default:
-                    System.out.println("Error");
+                System.out.println("Error");
         }
     }
 }

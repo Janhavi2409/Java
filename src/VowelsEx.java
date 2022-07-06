@@ -5,7 +5,7 @@ public class VowelsEx {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter any character");
         char ch = sc.next().toLowerCase().charAt(0);
-        switch(ch){
+        switch (ch) {
             case 'a':
                 System.out.println("Vowel");
                 break;

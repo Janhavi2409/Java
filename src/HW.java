@@ -1,9 +1,5 @@
-
-
-import java.util.Scanner;
-
 public class HW {
-    public static void main(String []args) {
+    public static void main(String[] args) {
         //if
         int a = 30;
         int b = 45;

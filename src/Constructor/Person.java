@@ -3,27 +3,32 @@ package Constructor;
 public class Person {
     int id;
     String Name;
-    Person(int i, String nm){
+
+    Person(int i, String nm) {
         id = i;
         Name = nm;
     }
-    Person(){
+
+    Person() {
         System.out.println("Default Constructor");
     }
-    Person(String nm){
+
+    Person(String nm) {
         Name = nm;
     }
-    void display(){
-        System.out.println("Id: "+id);
-        System.out.println("Name: "+Name);
+
+    void display() {
+        System.out.println("Id: " + id);
+        System.out.println("Name: " + Name);
     }
 }
-class PersonImpl{
+
+class PersonImpl {
     public static void main(String[] args) {
-      Person p1 = new Person(6,"Zen");
-      p1.display();
-      Person p2 = new Person();
-      Person p3 = new Person("Janhavi");
+        Person p1 = new Person(6, "Zen");
+        p1.display();
+        Person p2 = new Person();
+        Person p3 = new Person("Janhavi");
         p3.display();
     }
 }
