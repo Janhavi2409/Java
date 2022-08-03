@@ -1,6 +1,9 @@
 package ExceptionHandling;
 
-public class Exception {
+public class Exception extends Throwable {
+    public Exception(String s) {
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello");
 
