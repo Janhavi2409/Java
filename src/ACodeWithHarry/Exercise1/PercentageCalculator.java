@@ -1,8 +1,9 @@
-package ACodeWithHarry;
+package ACodeWithHarry.Exercise1;
 
 import java.util.Scanner;
 
 public class PercentageCalculator {
+
     public static void main(String[] args) {
         System.out.println("------------------------CBSE BOARDS PERCENTAGE CALCULATOR--------------------------");
         Scanner sc = new Scanner(System.in);

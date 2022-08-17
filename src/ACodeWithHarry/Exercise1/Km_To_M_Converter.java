@@ -1,8 +1,9 @@
-package ACodeWithHarry;
+package ACodeWithHarry.Exercise1;
 
 import java.util.Scanner;
 
 public class Km_To_M_Converter {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Distance in Kilometers: ");
