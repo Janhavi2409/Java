@@ -12,9 +12,9 @@ public class ArrayListDemo {
         list.add("Kolkata");
         list.add("Chennai");
         list.add("Madras");
+        list.add("Pune");
 
-
-        System.out.println(list);
+        System.out.println(list);//duplicate elements get added
 
 
         System.out.println(list.size());
@@ -23,7 +23,7 @@ public class ArrayListDemo {
         list.add(3,"Bangalore");
         System.out.println(list);
 
-
+        //!list.isEmpty()=> list is not empty
         if(!list.isEmpty()){
             System.out.println("List is not Empty");
         }
