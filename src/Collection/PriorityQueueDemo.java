@@ -10,6 +10,7 @@ public class PriorityQueueDemo {
         queue.add(5);
         queue.add(3);
         queue.add(1);
+        //queue.add(null);//throws NullPointerException
         System.out.println(queue);
         queue.poll();
         System.out.println(queue);
