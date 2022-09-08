@@ -58,15 +58,8 @@ class Stud implements Comparable<Stud>{
     public int compareTo(Stud s) {
 
         if (cgpa > s.cgpa){
-            System.out.print("In if: ");
-            System.out.println(cgpa+" for id "+s.cgpa);
             return 1;
     }
-        else if (cgpa < s.cgpa) {
-            System.out.print("In else: ");
-            System.out.println(cgpa+" for id "+s.cgpa);
-            return -1;
-        }
         return 0;
     }
 }

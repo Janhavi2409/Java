@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
-        //List<String> fruits = new LinkedList<>();
+        //List<String> fruits = new LinkedList<>();//list is ordered collection
         LinkedList<String> fruits = new LinkedList<>();
 
         fruits.add("Apple");
