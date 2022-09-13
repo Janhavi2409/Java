@@ -10,7 +10,8 @@ public class TreeMapDemo {
         map.put(104,"Goa");
         map.put(103,"Goa");
         map.put(106,null);
-        // map.put(null,"Kerala");//throws Null pointer ex
+        //map.put(null, null);//throws NullPointerException
+        //map.put(null,"Kerala");//throws NullPointerException
         System.out.println(map);
     }
 }
