@@ -1,9 +1,5 @@
 package FileHandling;
 
-import com.itextpdf.kernel.pdf.PdfReader;
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.kernel.pdf.canvas.parser.PdfTextExtractor;
-
 import java.io.*;
 
 public class BufferWriterReaderDemo {
@@ -24,10 +20,5 @@ public class BufferWriterReaderDemo {
         bufferedReader.close();
         fileReader.close();
 
-//        PdfWriter pdfWriter = new PdfWriter("./src/FileHandling/pdf.pdf");
-//        PdfReader pdfReader =new PdfReader("./src/FileHandling/pdf.pdf");
-//        String reader = PdfTextExtractor.getTextFromPage(pdfReader, 1);
-//        System.out.println(reader);
-//        pdfReader.close();
     }
 }
