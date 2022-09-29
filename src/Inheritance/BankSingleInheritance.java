@@ -13,7 +13,7 @@ class SbiBank extends BankSingleInheritance {
     String contactNo;
 
     void display() {
-        System.out.println("Bank no.:- " + bankNo);
+        System.out.println("BankTransaction no.:- " + bankNo);
         System.out.println("IFSC:- " + ifsCode);
         System.out.println("Address:- " + Address);
         System.out.println("Branch Code:- " + branchCode);
