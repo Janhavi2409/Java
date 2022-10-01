@@ -3,57 +3,65 @@ package Threads;
 import java.util.Scanner;
 
 public class BankTransaction {
-    int totalAmount = 100000;
-    synchronized void withdrawMoney(int amount) throws InsufficientBalance {
-        if (amount > totalAmount){
-            throw new InsufficientBalance("Insufficient Balance");
+    int totalAmount = 0;
+    synchronized int withdrawMoney(int amount) throws InsufficientBalance{
+        if (amount > totalAmount) {
+            throw new InsufficientBalance("Insufficient balance ");
         }else {
             totalAmount = totalAmount - amount;
-            System.out.println("Remaining Amount = " + totalAmount);
+            return totalAmount;
         }
     }
-   synchronized void depositMoney(int amount){
-        totalAmount = totalAmount+amount;
-        System.out.println("Current Balance = "+totalAmount);
+    synchronized int depositMoney(int amount){
+        totalAmount = totalAmount + amount;
+        return totalAmount;
+
     }
 }
 class UserOne extends Thread{
     int amt;
     BankTransaction bankTransaction;
-    UserOne(BankTransaction bankTransaction, int amt){
+    UserOne(BankTransaction bankTransactions, int amt){
         this.bankTransaction = bankTransaction;
         this.amt = amt;
-    };
+    }
     @Override
     public void run() {
-        bankTransaction.depositMoney(amt);
+        System.out.println("Current "+bankTransaction.depositMoney(amt));
     }
 }
 class UserTwo extends Thread{
     int amt;
     BankTransaction bankTransaction;
-    UserTwo(BankTransaction bankTransaction, int amt){
+    UserTwo(BankTransaction bankTransactions, int amt){
         this.bankTransaction = bankTransaction;
         this.amt = amt;
-    };
+    }
     @Override
     public void run() {
         try {
-            bankTransaction.withdrawMoney(amt);
+            System.out.println("Remaining "+bankTransaction.withdrawMoney(amt));
         } catch (InsufficientBalance e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
     }
 }
+
 class TransactionImpl{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter amount for deposit");
-        int amt = sc.nextInt();
+
+        System.out.println("Enter deposit amount");
+        int deposit = sc.nextInt();
+
         BankTransaction bankTransaction = new BankTransaction();
-        UserOne t1 = new UserOne(bankTransaction, amt);
-        UserTwo t2 = new UserTwo(bankTransaction, amt);
+        UserOne t1 = new UserOne(bankTransaction,deposit);
         t1.start();
-        t2.start();
+           t1.join();
+        System.out.println("Enter withdrawal amount");
+        int withdraw = sc.nextInt();
+        UserTwo t3 = new UserTwo(bankTransaction,withdraw);
+        t3.start();
+
     }
 }
