@@ -15,7 +15,7 @@ class Cir {
 
     public void area() {
         float area = pi * radius;
-        System.out.println("Area = " + area + " units");
+        System.out.println("Area = " + area + " sq.units");
     }
 
     public void perimeter() {

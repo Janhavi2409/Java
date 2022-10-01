@@ -22,7 +22,7 @@ class rect {
 
     public void area() {
         int area = length * breadth;
-        System.out.println("Area = " + area + " units");
+        System.out.println("Area = " + area + " sq.units");
     }
 
     public void perimeter() {

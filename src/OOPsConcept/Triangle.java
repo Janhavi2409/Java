@@ -22,7 +22,7 @@ class Tri {
 
     public void area() {
         double area = 0.5 * base * height;
-        System.out.println("Area = " + area + " units");
+        System.out.println("Area = " + area + " sq.units");
     }
 
 }
