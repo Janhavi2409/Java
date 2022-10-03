@@ -1,14 +1,18 @@
 package OOPsConcept.Interface;
 
-interface Parent{
+interface Parent {
     void meth1();
+
     void meth2();
 }
-interface Child extends Parent{
+
+interface Child extends Parent {
     void meth3();
+
     void meth4();
 }
-class Child2 implements Child{
+
+class Child2 implements Child {
 
     @Override
     public void meth1() {
@@ -30,6 +34,7 @@ class Child2 implements Child{
         System.out.println("meth4 in child");
     }
 }
+
 public class InheritanceInInterface {
     public static void main(String[] args) {
         Child2 c2 = new Child2();
