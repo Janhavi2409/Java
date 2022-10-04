@@ -5,29 +5,29 @@ import java.util.Scanner;
 class Transaction {
     private String transactionType;
     private int accountNumber;
-    private int Amount = 10000000;
+    private int amount = 10000000;
 
     public Transaction(String transactionType, int accountNumber, int amount) {
         this.transactionType = transactionType;
         this.accountNumber = accountNumber;
-        Amount = Amount;
+        this.amount = amount;
     }
 
     public void Amount() {
-        System.out.println("Current Balance = " + Amount);
+        System.out.println("Current Balance = " + amount);
     }
 
     public void creditAmount(int credit) {
-        Amount = Amount + credit;
-        System.out.println("Amount after Credit = " + Amount);
+        amount = amount + credit;
+        System.out.println("Amount after Credit = " + amount);
     }
 
     public void debitAmount(int debit) {
-        if (debit > Amount) {
+        if (debit > amount) {
             throw new ArithmeticException("Insufficient Balance");
         } else {
-            Amount = Amount - debit;
-            System.out.println("Amount After Debit = " + Amount);
+            amount = amount - debit;
+            System.out.println("Amount After Debit = " + amount);
         }
     }
 }
